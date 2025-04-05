@@ -1,6 +1,6 @@
 # Introduction
 
-This is my personal site to showcase projects and experiences.
+Hi there, welcome to my personal portfolio site! This is just a simple static website with basic CSS animations. Initially I used Next but I thought it was a bit overkill, so I tried experimenting with Astro.
 
 # Requirements
 

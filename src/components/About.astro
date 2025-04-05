@@ -1,0 +1,184 @@
+---
+
+import { ExternalLink, Code2, Palette, Database, Send } from 'lucide-react';
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
+---
+ 
+ {/* About Section */}
+ <section id="about" class="py-32 bg-gray-800">
+  <div class="container mx-auto px-6">
+    <div class="max-w-3xl mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+      <h2 class="text-4xl font-bold mb-8 text-gray-200">Industry Experience</h2>
+      <div class="text-gray-400 text-lg leading-relaxed space-y-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>Card Title</CardTitle>
+            <CardDescription>Card Description</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>Card Content</p>
+          </CardContent>
+          <CardFooter>
+            <p>Card Footer</p>
+          </CardFooter>
+        </Card>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Skills Section */}
+<section id="skills" class="py-32 bg-gray-600">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-20 text-gray-200">What I Do</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      {[
+        {
+          icon: <Code2 class="text-indigo-600 animate-float" size={32} />,
+          title: "Frontend Development",
+          description: "Creating responsive and intuitive user interfaces using modern frameworks.",
+          bg: "bg-indigo-100"
+        },
+        {
+          icon: <Database class="text-purple-600 animate-float" size={32} />,
+          title: "Backend Development",
+          description: "Building robust APIs and server-side applications with scalable architecture.",
+          bg: "bg-purple-100"
+        },
+        {
+          icon: <Palette class="text-pink-600 animate-float" size={32} />,
+          title: "UI/UX Design",
+          description: "Designing beautiful and functional user experiences that delight users.",
+          bg: "bg-pink-100"
+        }
+      ].map((skill, index) => (
+        <div 
+          class={`bg-white rounded-xl shadow-lg p-8 card-hover transition-all duration-1000 opacity-100 translate-y-0
+            hover:bg-gradient-to-br hover:from-white hover:to-gray-200`}
+          style={{ transitionDelay: `${index * 200}ms` }}
+        >
+          <div class={`w-16 h-16 ${skill.bg} rounded-2xl flex items-center justify-center mb-6 animate-pulse-glow`}>
+            {skill.icon}
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-200">{skill.title}</h3>
+          <p class="text-gray-200">{skill.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* Projects Section */}
+<section id="projects" class="py-32 bg-gray-800">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-20 text-gray-200">Featured Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      {[
+        {
+          image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+          title: "E-Commerce Platform",
+          description: "A full-stack e-commerce solution with React and Node.js",
+          tech: ["React", "Node.js", "MongoDB", "AWS"]
+        },
+        {
+          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+          title: "Analytics Dashboard",
+          description: "Real-time data visualization platform",
+          tech: ["Vue.js", "D3.js", "Firebase", "TypeScript"]
+        }
+      ].map((project, index) => (
+        <div 
+          class={`group relative overflow-hidden rounded-xl shadow-lg transition-all duration-1000 opacity-100 translate-y-0`}
+          style={{ transitionDelay: `${index * 200}ms` }}
+        >
+          <img 
+            src={project.image}
+            alt={project.title}
+            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <div class="absolute bottom-0 left-0 right-0 p-8">
+              <h3 class="text-2xl font-semibold text-white mb-3 text-glow">{project.title}</h3>
+              <p class="text-gray-300 mb-4">{project.description}</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                {project.tech.map((tech) => (
+                  <span class="px-3 py-1 bg-white/20 rounded-full text-sm text-white animate-pulse-glow">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <a 
+                href="#" 
+                class="inline-flex items-center text-white hover:text-indigo-300 transition-colors group"
+              >
+                View Project <ExternalLink size={16} class="ml-2 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* Contact Section */}
+<section id="contact" class="py-32 bg-gray-800">
+  <div class="container mx-auto px-6">
+    <div class={`max-w-2xl mx-auto transition-all duration-1000 opacity-100 translate-y-0`}>
+      <h2 class="text-4xl font-bold text-center mb-20 text-gray-200">Get In Touch</h2>
+      <form class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-200 mb-2">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all hover:shadow-lg"
+              placeholder="Your name"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all hover:shadow-lg"
+              placeholder="your@email.com"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+            Message
+          </label>
+          <textarea
+            id="message"
+            rows={6}
+            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all hover:shadow-lg"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-indigo-600 text-white py-4 px-8 rounded-lg hover:bg-indigo-700 transition-all hover:scale-105 flex items-center justify-center group animate-pulse-glow"
+        >
+          Send Message
+          <Send class="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
