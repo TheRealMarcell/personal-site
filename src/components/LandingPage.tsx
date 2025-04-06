@@ -43,7 +43,7 @@ export default function App() {
               <span className="text-indigo-400 text-xl font-semibold">Full Stack Developer</span>
             </div>
             <div>
-              <h1 className="text-4xl md:text-8xl font-bold mb-8">
+              <h1 className="text-4xl md:text-8xl font-bold mb-8 animate-pulse-glow">
                 Marcellus Simanjuntak
               </h1>
             </div>
@@ -52,7 +52,7 @@ export default function App() {
               {siteContent.headingText}
             </p>
             <div className="flex items-center space-x-6 animate-fade-in delay-300">
-              <a href="#contact" className="bg-[#17c3a0] text-white px-8 py-4 rounded-lg hover:bg-[#109a7e] transition-all hover:scale-105 flex items-center group animate-pulse-glow floating-button">
+              <a href="#contact" className="bg-[#17c3a0] text-white px-8 py-4 rounded-lg hover:bg-[#109a7e] transition-all hover:scale-105 flex items-center group animate-floating-button">
                 Get in Touch
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </a>

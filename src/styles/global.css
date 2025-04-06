@@ -97,7 +97,7 @@ body {
 }
 
 /* animations */
-.floating-button {
+.animate-floating-button {
   animation: float 2s ease-in-out infinite;
 }
 
@@ -110,6 +110,28 @@ body {
   background-image: url('/src/assets/background.svg');
   background-position: center;
   background-size: cover;
+}
+
+/* DM Sans font */
+.dm-sans-light {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.dm-sans-med {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.dm-sans-bold {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
 @keyframes float {

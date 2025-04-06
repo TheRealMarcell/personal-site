@@ -1,36 +1,17 @@
 ---
 
 import { ExternalLink, Code2, Palette, Database, Send } from 'lucide-react';
-
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+import { InteractiveCarousel } from './InteractiveCarousel';
 
 ---
  
  {/* About Section */}
- <section id="about" class="py-32 bg-gray-800">
+ <section id="about" class="py-32 bg-[#27272A]">
   <div class="container mx-auto px-6">
     <div class="max-w-3xl mx-auto transition-all duration-1000 opacity-100 translate-y-0">
       <h2 class="text-4xl font-bold mb-8 text-gray-200">Industry Experience</h2>
       <div class="text-gray-400 text-lg leading-relaxed space-y-6">
-        <Card>
-          <CardHeader>
-            <CardTitle>Card Title</CardTitle>
-            <CardDescription>Card Description</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p>Card Content</p>
-          </CardContent>
-          <CardFooter>
-            <p>Card Footer</p>
-          </CardFooter>
-        </Card>
+        <InteractiveCarousel client:load/>
       </div>
     </div>
   </div>
@@ -43,19 +24,19 @@ import {
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
       {[
         {
-          icon: <Code2 class="text-indigo-600 animate-float" size={32} />,
+          icon: <Code2 className="text-indigo-600 animate-float" size={32} />,
           title: "Frontend Development",
           description: "Creating responsive and intuitive user interfaces using modern frameworks.",
           bg: "bg-indigo-100"
         },
         {
-          icon: <Database class="text-purple-600 animate-float" size={32} />,
+          icon: <Database className="text-purple-600 animate-float" size={32} />,
           title: "Backend Development",
           description: "Building robust APIs and server-side applications with scalable architecture.",
           bg: "bg-purple-100"
         },
         {
-          icon: <Palette class="text-pink-600 animate-float" size={32} />,
+          icon: <Palette className="text-pink-600 animate-float" size={32} />,
           title: "UI/UX Design",
           description: "Designing beautiful and functional user experiences that delight users.",
           bg: "bg-pink-100"
@@ -120,7 +101,7 @@ import {
                 href="#" 
                 class="inline-flex items-center text-white hover:text-indigo-300 transition-colors group"
               >
-                View Project <ExternalLink size={16} class="ml-2 group-hover:translate-x-1 transition-transform" />
+                View Project <ExternalLink size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
@@ -176,7 +157,7 @@ import {
           class="w-full bg-indigo-600 text-white py-4 px-8 rounded-lg hover:bg-indigo-700 transition-all hover:scale-105 flex items-center justify-center group animate-pulse-glow"
         >
           Send Message
-          <Send class="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+          <Send className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
         </button>
       </form>
     </div>
