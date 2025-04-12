@@ -30,7 +30,7 @@ export default function App() {
           <nav className="flex justify-between items-center mb-16">
             <span className="text-white font-bold text-xl hover-scale">MS</span>
             <div className="flex items-center space-x-8 navbar-text">
-              <a href="#about" className="text-gray-300 hover:text-white transition-colors hover-scale">About</a>
+              <a href="#experience" className="text-gray-300 hover:text-white transition-colors hover-scale">Experience</a>
               <a href="#skills" className="text-gray-300 hover:text-white transition-colors hover-scale">Skills</a>
               <a href="#projects" className="text-gray-300 hover:text-white transition-colors hover-scale">Projects</a>
               <a href="#contact" className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-all hover:scale-105 animate-pulse-glow">
@@ -57,13 +57,13 @@ export default function App() {
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full hover-scale">
+                <a href="https://github.com/TheRealMarcell" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full hover-scale">
                   <Github size={24} />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full hover-scale">
+                <a href="https://www.linkedin.com/in/marcellus-simanjuntak-5294071ba/" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full hover-scale">
                   <Linkedin size={24} />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full hover-scale">
+                <a href="mailto:marcellusgerson@gmail.com" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full hover-scale">
                   <Mail size={24} />
                 </a>
               </div>
