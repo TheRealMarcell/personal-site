@@ -7,7 +7,7 @@ export const siteContent = {
       "description": `Worked within the solution development team as a full-stack developer to deliver software requirements to Telkomsel's internal teams.
       Developed a kanban-style project management app with forum functionality. Revamped the internal Tech Radar to integrate with a Go backend.`,
       "stack": ["Next.js", "TypeScript", "Golang", "PostgreSQL"],
-      "image": "/personal-site/src/assets/telkomsel.svg"
+      "image": "/personal-site/assets/telkomsel.svg"
     },
     {
       "title": "InSite Project Solutions",
@@ -15,7 +15,7 @@ export const siteContent = {
       "description": `Worked as a full-stack engineer to develop a Linux-based monitoring solution to track
       CPU, GPU and Network metrics to optimise usage. Implemented CI/CD pipelines to streamline development.`,
       "stack": ["React", "Django (Python)", "PostgreSQL"],
-      "image": "/personal-site/src/assets/insite.svg"
+      "image": "/personal-site/assets/insite.svg"
     }
   ]
 
