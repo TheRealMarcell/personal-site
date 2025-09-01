@@ -1,13 +1,19 @@
 ---
+
+import Layout from '../layouts/Layout.astro';
 import LandingPage from '../components/LandingPage.tsx';
 import Experience from '../components/Experience.astro'
-import Layout from '../layouts/Layout.astro';
+import Projects from '../components/Projects.astro'
+import Contact from '../components/Contact.astro'
+import Skills from '../components/Skills.astro'
 
 ---
 
 <Layout>
 	<LandingPage client:load/>
   <Experience />
-  
+  <Skills />
+  <Projects />
+  <Contact />
   <!-- <Footer /> -->
 </Layout>

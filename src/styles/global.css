@@ -96,11 +96,6 @@ body {
   font-weight: 9000;
 }
 
-/* animations */
-.animate-floating-button {
-  animation: float 2s ease-in-out infinite;
-}
-
 .background-gradient {
   background: radial-gradient(circle at center, #330979, #00bbff);
   transition: background 0.1 ease;
@@ -132,6 +127,11 @@ body {
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
+}
+
+/* animations */
+.animate-floating-button {
+  animation: float 2s ease-in-out infinite;
 }
 
 @keyframes float {
