@@ -6,8 +6,8 @@ export const siteContent = {
       "title": "Grab",
       "role": "Software Engineer (Backend) 💻",
       "period": "Sep 2025 - Present",
-      "description": `Within the Pax Pricing team, part of the fulfilment super family 
-      working on high throughput, real-time distributed systems 
+      "description": `Working within the Pax Pricing team, part of the fulfilment super family 
+      focused on high throughput, real-time distributed systems 
       to solve hundreds of millions of requests per day`,
       "stack": ["Golang"],
       "image": "/personal-site/assets/grab_icon.svg"
