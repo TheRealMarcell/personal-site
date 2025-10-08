@@ -14,7 +14,7 @@ export const siteContent = {
     },
     {
       "title": "Telkomsel",
-      "role": "Software Engineer (Fullstack) 🚀",
+      "role": "Software Engineer Intern (Fullstack) 🚀",
       "period": "Dec 2024 - Feb 2025",
       "description": `Worked within the solution development team as a full-stack developer to deliver highly scalable applications for Telkomsel's internal teams.
       Developed a kanban-style project management app with forum functionality.`,
@@ -23,7 +23,7 @@ export const siteContent = {
     },
     {
       "title": "InSite Project Solutions",
-      "role": "Software Engineer (Fullstack) 🚀",
+      "role": "Software Engineer Intern (Fullstack) 🚀",
       "period": "Jul 2024 - Nov 2024",
       "description": `Worked as a full-stack engineer to develop a Linux-based monitoring solution to track
       CPU, GPU and Network metrics to optimise usage. Implemented CI/CD pipelines to streamline development.`,
