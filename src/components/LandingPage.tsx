@@ -40,7 +40,7 @@ export default function App() {
           </nav>
           <div className="flex flex-col items-center text-center mt-32">
             <div className="mb-6 animate-fade-in">
-              <span className="text-indigo-400 text-xl font-semibold">Full Stack Developer</span>
+              <span className="text-indigo-400 text-xl font-semibold">{siteContent.headingRole}</span>
             </div>
             <div>
               <h1 className="text-4xl md:text-8xl font-bold mb-8 animate-pulse-glow">
