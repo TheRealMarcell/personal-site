@@ -15,32 +15,21 @@ export default function LandingPageAnimation() {
       document.addEventListener('mousemove', (e) => {
         const x = e.clientX;
         const y = e.clientY;
-        background.style.background = `radial-gradient(circle at ${x}px ${y}px, #330979, #00bbff)`;
+        background.style.background = `radial-gradient(circle at ${x}px ${y}px, #7f7f7f, #2c2c2c)`;
       });
     }
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <header className="min-h-screen relative overflow-hidden bg-gray-900 hero-pattern landing-page">
         <div className="absolute inset-0 animated-background"></div>
         <div className="absolute inset-0 background-gradient opacity-50"></div>
         <div className="container mx-auto px-6 py-24 relative">
-          <nav className="flex justify-between items-center mb-16 fixed top-10 left-15 right-15 z-50">
-            <span className="text-white font-bold text-xl hover-scale">MS</span>
-            <div className="flex items-center space-x-8 navbar-text">
-              <a href="#experience" className="text-gray-300 hover:text-white transition-colors hover-scale">Experience</a>
-              <a href="#skills" className="text-gray-300 hover:text-white transition-colors hover-scale">Skills</a>
-              <a href="#projects" className="text-gray-300 hover:text-white transition-colors hover-scale">Projects</a>
-              <a href="#contact" className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-all hover:scale-105 animate-pulse-glow">
-                Contact
-              </a>
-            </div>
-          </nav>
           <div className="flex flex-col items-center text-center mt-32">
             <div className="mb-6 animate-fade-in">
-              <span className="text-indigo-400 text-xl font-semibold">{siteContent.headingRole}</span>
+              <span className="text-gray-200 text-2xl font-semibold">{siteContent.headingRole}</span>
             </div>
             <div>
               <h1 className="text-4xl md:text-8xl font-bold mb-8 animate-pulse-glow">
@@ -52,7 +41,7 @@ export default function LandingPageAnimation() {
               {siteContent.headingText}
             </p>
             <div className="flex items-center space-x-6 animate-fade-in delay-300">
-              <a href="#contact" className="bg-[#17c3a0] text-white px-8 py-4 rounded-lg hover:bg-[#109a7e] transition-all hover:scale-105 flex items-center group animate-floating-button">
+              <a href="#contact" className="bg-indigo-600 text-white px-8 py-4 rounded-lg hover:bg-[#109a7e] transition-all hover:scale-105 flex items-center group animate-floating-button">
                 Get in Touch
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </a>

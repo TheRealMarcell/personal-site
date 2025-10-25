@@ -8,31 +8,30 @@ import { Code2, Palette, Database } from 'lucide-react';
 <section id="skills" class="py-32 bg-[#1F1F23]">
   <div class="container mx-auto px-6">
     <h2 class="text-4xl font-bold text-center mb-20 text-gray-200">Skills</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 cursor-default select-none">
       {[
         {
-          icon: <Code2 className="text-indigo-600 animate-float" size={32} />,
+          icon: <Code2 className="text-indigo-600" size={32} />,
           title: "Frontend Development",
           description: "Creating responsive and intuitive user interfaces using modern frameworks.",
           bg: "bg-indigo-100"
         },
         {
-          icon: <Database className="text-purple-600 animate-float" size={32} />,
+          icon: <Database className="text-purple-600" size={32} />,
           title: "Backend Development",
           description: "Building robust APIs and server-side applications with scalable architecture.",
           bg: "bg-purple-100"
         },
         {
-          icon: <Palette className="text-pink-600 animate-float" size={32} />,
+          icon: <Palette className="text-pink-600" size={32} />,
           title: "UI/UX Design",
           description: "Designing beautiful and functional user experiences that delight users.",
           bg: "bg-pink-100"
         }
-      ].map((skill, index) => (
+      ].map((skill) => (
         <div 
           class={`bg-[#27272A] rounded-xl shadow-lg p-8 card-hover transition-all duration-1000 opacity-100 translate-y-0
             hover:bg-gradient-to-br hover:to-gray-400`}
-          style={{ transitionDelay: `${index * 200}ms` }}
         >
           <div class={`w-16 h-16 ${skill.bg} rounded-2xl flex items-center justify-center mb-6 animate-pulse-glow`}>
             {skill.icon}
