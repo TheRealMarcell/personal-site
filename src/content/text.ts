@@ -1,7 +1,7 @@
 export const siteContent = {
   "headingRole": "Software Engineer",
   "headingText": "Focused, curious, driven. I strive to find the balance between cleanly-written code, happy users and delivering on-time.",
-  "internships": [
+  "experiences": [
     {
       "title": "Grab",
       "role": "Software Engineer (Backend) 💻",
@@ -30,6 +30,20 @@ export const siteContent = {
       "stack": ["React", "Django (Python)", "PostgreSQL"],
       "image": "/personal-site/assets/insite.svg"
     }
-  ]
+  ],
+  "projects": [
+        {
+          title: "Enterprise Resource Planning Application",
+          description: "A full-stack enterprise solution with Golang and Next.js",
+          tech: ["Golang", "Next.js", "Shadcn", "Docker", "Go"],
+          link: "https://github.com/TheRealMarcell/erp-proto-be"
+        },
+        {
+          title: "Student Repository Web Application",
+          description: "Fullstack web application to track student repositories within USyd",
+          tech: ["Python", "Javascript", "Flask", "SQLAlchemy"],
+          link: "https://github.com/TheRealMarcell/studentrepository"
+        }
+      ]
 
 }

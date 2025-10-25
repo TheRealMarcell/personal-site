@@ -5,7 +5,7 @@ import { siteContent } from '../content/text';
 import '../styles/global.css';
 import { Github, Linkedin, Mail, ExternalLink, Code2, Palette, Database, ArrowRight, Send } from 'lucide-react';
 
-export default function App() {
+export default function LandingPageAnimation() {
   // animate background
   useEffect(() => {
     const background = document.querySelector('.background-gradient') as HTMLElement | null;
@@ -27,7 +27,7 @@ export default function App() {
         <div className="absolute inset-0 animated-background"></div>
         <div className="absolute inset-0 background-gradient opacity-50"></div>
         <div className="container mx-auto px-6 py-24 relative">
-          <nav className="flex justify-between items-center mb-16">
+          <nav className="flex justify-between items-center mb-16 fixed top-10 left-15 right-15 z-50">
             <span className="text-white font-bold text-xl hover-scale">MS</span>
             <div className="flex items-center space-x-8 navbar-text">
               <a href="#experience" className="text-gray-300 hover:text-white transition-colors hover-scale">Experience</a>

@@ -1,6 +1,6 @@
 ---
 
-import { InteractiveCarousel } from './InteractiveCarousel';
+import { siteContent } from '@/content/text';
 
 ---
  
@@ -9,7 +9,30 @@ import { InteractiveCarousel } from './InteractiveCarousel';
     <div class="max-w-3xl mx-auto transition-all duration-1000 opacity-100 translate-y-0">
       <h2 class="text-4xl font-bold mb-8 text-gray-200">Industry Experience</h2>
       <div class="text-gray-400 text-lg leading-relaxed space-y-6">
-        <InteractiveCarousel client:load/>
+        <div class="space-y-8">
+            {siteContent.experiences.map((exp) => (
+                <div
+                class="flex flex-row p-8 bg-[#18181B] rounded-sm h-72 cursor-default select-none"
+                >
+                <div class="basis-1/3 hidden md:flex">
+                    <img src={exp.image} class="w-48 h-48" alt={`${exp.title} logo`} />
+                </div>
+                <div class="basis-xl md:basis-2/3 text-gray-50">
+                    <p class="dm-sans-bold md:text-base lg:text-4xl">{exp.title}</p>
+                    <p class="dm-sans-med text-lg">{exp.role}</p>
+                    <p>{exp.period}</p>
+                    <p class="dm-sans-light text-base hidden md:flex">{exp.description}</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                    {exp.stack.map((stack) => (
+                        <span class="px-3 py-1 bg-gray-700 text-white rounded-full text-sm">
+                        {stack}
+                        </span>
+                    ))}
+                    </div>
+                </div>
+            </div>
+        ))}
+        </div>
       </div>
     </div>
   </div>
